@@ -35,7 +35,7 @@ A lightweight interactive C# scripting console designed for real-time execution 
 To get started with **CSharpScript.Console**, clone this repository and follow the instructions below:
 
 ```bash
-git clone https://github.com/your-username/CSharpScript.Console.git
+git clone https://github.com/xukonxe/CSharpScript.Console.git
 ```
 
 ## Requirements
