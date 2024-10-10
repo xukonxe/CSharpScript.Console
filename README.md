@@ -2,6 +2,9 @@
 
 A lightweight interactive C# scripting console designed for real-time execution of C# code. This project is based on **C#Script**, allowing developers to dynamically interact with the host program using native C# syntax, without the need to recompile the entire project. It offers flexibility for rapid prototyping and testing.
 
+[English](README.md) | [简体中文](README.zh.md) 
+
+
 ## Features
 
 - **Easy Console Creation and Customization**  
