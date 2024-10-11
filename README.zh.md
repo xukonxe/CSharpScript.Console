@@ -3,6 +3,8 @@
 
 轻量级的交互式 C# 脚本控制台，用于实时执行 C# 代码。此项目基于 **C#Script**。在宿主程序中创建后，允许开发者在运行时使用原生 C# 语法与宿主程序动态交互，无需重新编译整个项目，以为快速原型开发和测试提供灵活性。
 
+相关仓库：[CsharpScript.Console C#Script 运行时控制台](https://github.com/xukonxe/CSharpScript.Running)
+
 ## 特性
 
 - **方便的控制台创建、自定义操作**  
