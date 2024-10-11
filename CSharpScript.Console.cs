@@ -59,6 +59,7 @@ namespace TGZG.CSharpScript.Console {
                 if (ThisConsole.environment.ReadyToExit) continue;
                 if (ThisConsole.environment.ReadyToOutputVars) {
                     ListVariables();
+                    ThisConsole.environment.ReSetReadyToOutputVars();
                     continue;
                 }
                 RunScriptLine(input);
@@ -82,15 +83,14 @@ namespace TGZG.CSharpScript.Console {
             } else {
                 "No variables defined.".Log();
             }
-            ThisConsole.environment.ReSetReadyToOutputVars();
         }
         void RunScriptLine(string input) {
             try {
-                if (ThisConsole.context == null) {
+                if (ThisConsole.context == null)
                     ThisConsole.context = Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync(input, ThisConsole.options, ThisConsole.globals, typeof(T)).Result;
-                    ThisConsole.context.ReturnValue?.Log();
-                } else
+                else
                     ThisConsole.context = ThisConsole.context.ContinueWithAsync(input).Result;
+                ThisConsole.context?.ReturnValue.Log();
             } catch (CompilationErrorException e) {
                 string.Join(Environment.NewLine, e.Diagnostics).LogError();
             }
