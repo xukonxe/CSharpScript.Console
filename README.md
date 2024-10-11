@@ -4,6 +4,8 @@ A lightweight interactive C# scripting console designed for real-time execution 
 
 [English](README.md) | [简体中文](README.zh.md) 
 
+Related repositorie：[CsharpScript.Console C#Script Runtime Console](https://github.com/xukonxe/CSharpScript.Running)
+
 
 ## Features
 
